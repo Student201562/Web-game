@@ -1,0 +1,26 @@
+
+.MainMenun a, ..MainMenu a:visited {color: #9d999d;}
+.MainMenu a.current, .MainMenu a:hover{color: #feb386;}
+.MainMenu a:before,
+.MainMenu a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
+}
+.MainMenu a:hover:before, .MainMenu .current:before {left: 0;}
+.MainMenu a:hover:after, .MainMenu .current:after {right: 0;}   
+@media (max-width: 550px) {
+.MainMenu {padding-top: 0;}
+.MainMenu li {display: block;}
+.MainMenu li:after {content: none;}
+.MainMenu a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}

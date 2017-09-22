@@ -1,6 +1,47 @@
 body{
-	background: white;
+	background-image: url(../images/диабло.jpg); /* Путь к фоновому изображению */
+	background-size: 100%;	
+	padding: 0px;
+
 }
-h1{
-	color: #a52a2a;
+.MainMenu{
+	list-style: none;
+	margin: 0px;
+	padding: 25px 0 20px;
+  	text-align: center;
+  	background: #1a0000;
+}
+.MainMenu li {display: inline-block;}
+.MainMenu li:after { /* после каждого элемента li вставит черту*/
+  content: "|";
+  color: #606060;
+}
+.MainMenu li:last-child:after {content: none;} /* у последнего элемента убирает / */
+.MainMenu a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 5px; /* расстояние между букв */
+  margin: 0 60px 0 60px;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: color .2s;
+}
+.MainMenu a.current, .MainMenu a:hover{color: #feb386;}
+
+.classForbutton{
+	display: flex;
+	/*определяет то, как будут выровнены элементы вдоль поперечной оси.*/
+    align-items: center; 
+    /*определяет то, как будут выровнены элементы вдоль главной оси*/
+    justify-content: center; 
+    height: 100%;
+}
+.cButtonPlay{
+	background: #1a0000;
+	margin-top: 20%;
+	width: 200px;
+	height: 40px;
+	font-size: 18pt;
+	color: #4B0082;
+	border-radius: 50px 50px 0px 0px;
 }
