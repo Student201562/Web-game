@@ -1,0 +1,55 @@
+.classBodyAboutGame{
+	background-color: #5E2750;
+	padding: 0px;
+}
+.header{
+	width: 100%;
+	position: fixed;
+	transform: translateY(-10%);
+}
+.MainMenu{
+	list-style: none;
+	margin: 0px;
+	padding: 20px 0;
+  	text-align: center;
+  	background: #2C001E;
+ }
+.MainMenu li {
+	display: inline-block;
+}
+.MainMenu li:after { /* после каждого элемента li вставит черту*/
+  content: "|";
+  color: #606060;
+}
+.MainMenu li:last-child:after {content: none;} /* у последнего элемента убирает / */
+.MainMenu a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 5px; /* расстояние между букв */
+  margin: 0 60px 0 60px;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: color .2s;
+  color: white;
+}
+.MainMenu a.current, .MainMenu a:hover{color: #feb386;}
+
+.DescriptionGame{
+	text-align: center;
+	margin: 0 200px 0 200px;
+}
+b{
+	color: black;
+	font-weight: bolder;
+}
+.CaptionDescription{
+	font-family: serif;
+	color: white;
+	font-size: 24pt;
+	display: block;
+    padding-top: 30px;
+}
+.DecorTest{
+	color: white;
+	font-size: 20pt;
+}

@@ -1,4 +1,4 @@
-body{
+.classBodyMainHOME{
 	background-image: url(../images/диабло.jpg); /* Путь к фоновому изображению */
 	background-size: 100%;	
 	padding: 0px;
@@ -7,7 +7,7 @@ body{
 .MainMenu{
 	list-style: none;
 	margin: 0px;
-	padding: 25px 0 20px;
+	padding: 15px 0 25px;
   	text-align: center;
   	background: #1a0000;
 }
