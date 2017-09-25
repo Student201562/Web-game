@@ -4,6 +4,13 @@
 	padding: 0px;
 
 }
+
+.header{
+  width: 100%;
+  position: fixed;
+  transform: translateY(-10%);
+}
+
 .MainMenu{
 	list-style: none;
 	margin: 0px;
@@ -27,6 +34,12 @@
   transition: color .2s;
 }
 .MainMenu a.current, .MainMenu a:hover{color: #feb386;}
+
+.aStartGame{
+	pointer-events: none; 
+    cursor: default;  
+    color: #feb386;
+}
 
 .classForbutton{
 	display: flex;

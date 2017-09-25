@@ -30,9 +30,15 @@
   font-size: 20px;
   text-transform: uppercase;
   transition: color .2s;
-  color: white;
 }
 .MainMenu a.current, .MainMenu a:hover{color: #feb386;}
+
+
+.aAboutGame{
+	pointer-events: none; /* делаем ссылку некликабельной */
+    cursor: default;  /* устанавливаем курсор в виде стрелки */
+    color: #feb386;
+}
 
 .DescriptionGame{
 	text-align: center;
