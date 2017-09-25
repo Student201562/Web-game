@@ -3,7 +3,6 @@
 	padding: 0px;
 }
 
-
 .header{
   width: 100%;
   position: fixed;
@@ -41,10 +40,7 @@
   cursor: default;  /* устанавливаем курсор в виде стрелки */
   color: #feb386;
 }
-.imageGoldMedal{
-  transform: translateY(5%);
-  transform: translateX(5%);
-}
+
 
 .blocktableRating{
   width: 95%;
