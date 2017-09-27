@@ -1,3 +1,7 @@
+body{
+margin: 0;
+padding: 0;
+}
 .classBodyTopListOfGame {
 	background-color: #5E2750;
 	padding: 0px;
@@ -6,7 +10,8 @@
 .header{
   width: 100%;
   position: fixed;
-  transform: translateY(-10%);
+  top: 0;
+  height: 80px;
 }
 
 .MainMenu{
