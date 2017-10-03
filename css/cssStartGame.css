@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+/*index.html*/
 .classBodyMainHOME{
 	background-image: url(../images/диабло.jpg); /* Путь к фоновому изображению */
 	background-size: 100%;	
 	padding: 0px;
-
+  margin: 0px;
 }
 
-.header{
+.headerindex{
   width: 100%;
   position: fixed;
   transform: translateY(-10%);
@@ -15,8 +17,8 @@
 	list-style: none;
 	margin: 0px;
 	padding: 15px 0 25px;
-  	text-align: center;
-  	background: #1a0000;
+  text-align: center;
+  background: #1a0000;
 }
 .MainMenu li {display: inline-block;}
 .MainMenu li:after { /* после каждого элемента li вставит черту*/
@@ -35,7 +37,7 @@
 }
 .MainMenu a.current, .MainMenu a:hover{color: #feb386;}
 
-.aStartGame{
+.alink{
 	pointer-events: none; 
     cursor: default;  
     color: #feb386;
@@ -57,4 +59,110 @@
 	font-size: 18pt;
 	color: #4B0082;
 	border-radius: 50px 50px 0px 0px;
+}
+
+/*aboutgame.html*/
+.classBodyAboutGame{
+  background-color: #5E2750;
+  padding: 0px;
+  margin: 0px;
+}
+.headeraboutgame{
+  width: 100%;
+  position: fixed;
+  transform: translateY(-10%);
+}
+.DescriptionGame{
+  text-align: center;
+  margin: 0 200px 0 200px;
+}
+b{
+  color: black;
+  font-weight: bolder;
+}
+.CaptionDescription{
+  font-family: serif;
+  color: white;
+  font-size: 24pt;
+  display: block;
+    padding-top: 30px;
+}
+.DecorTest{
+  color: white;
+  font-size: 20pt;
+}
+/*toplistofgame.html*/
+.classBodyTopListOfGame {
+  background-color: #5E2750;
+  padding: 0px;
+  margin: 0;
+  font-family: 'Ubuntu', Arial;
+}
+.headertoplistofgame{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 80px;
+}
+.blocktableRating{
+  width: 95%;
+  max-width: 1000px;
+  margin: 20% 0px 0 20%; /* изменить*/
+  background:#696969;
+  transform: translateY(-200%);
+}
+
+.tableWithTheBestPlayers{
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+  text-align: center;
+}
+
+.tableWithTheBestPlayers td,
+.tableWithTheBestPlayers th{
+  padding: 5px;
+}
+
+.tableWithTheBestPlayers td{
+  position: relative;
+}
+
+@media screen and (max-width: 1050px){
+  thead{
+    display: none;
+  }
+  .blocktableRating{
+    transform: translateY(-100%); 
+  }
+  .tableWithTheBestPlayers td:before{
+    content: attr(data-label);
+    position: absolute;
+    left: 2%;
+  }
+  .tableWithTheBestPlayers td{
+    display: block;
+    padding-left: 10%;
+
+  }
+  .tableWithTheBestPlayers td:nth-child(odd){
+    background: #ccc;
+  }
+}
+
+@media screen and (max-width: 600px){
+.tableWithTheBestPlayers td:before{
+    position: static;
+    display: block;
+    background: #ccc;
+    font-weight: bold;
+    padding: 10px;
+  }
+.tableWithTheBestPlayers td{
+    padding: 10px;
+    text-align: center;
+  }
+  .tableWithTheBestPlayers td:nth-child(odd){
+    background-color: #fff;
+  }
 }
